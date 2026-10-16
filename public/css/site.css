@@ -1,0 +1,49 @@
+:root { --bs-primary: #1e2a5e; --bs-primary-rgb: 30, 42, 94; --bs-gold: #facc15; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+.navbar-brand img { height: 36px; }
+.hero {
+    background:
+        linear-gradient(90deg, rgba(16, 24, 58, .90) 0%, rgba(16, 24, 58, .55) 100%),
+        linear-gradient(rgba(16, 24, 58, .30), rgba(16, 24, 58, .30)),
+        url('../images/gedung-kantor.png') center/cover no-repeat;
+    color: #fff;
+}
+.hero h1 { font-weight: 700; }
+.hero-brand { color: #facc15; font-weight: 700; font-size: 1.35rem; letter-spacing: .03em; margin-bottom: .5rem; }
+.section-title { border-left: 5px solid var(--bs-primary); padding-left: .75rem; }
+.card-produk { transition: transform .2s ease, box-shadow .2s ease; border: 0; }
+.card-produk:hover { transform: translateY(-6px); box-shadow: 0 .75rem 1.5rem rgba(30, 42, 94, .18); }
+.icon-besar { width: 64px; height: 64px; font-size: 2rem; }
+.card-artikel:hover img, .galeri-item:hover img { transform: scale(1.05); }
+.card-artikel img, .galeri-item img { transition: transform .3s ease; }
+.galeri-item { overflow: hidden; border-radius: .75rem; position: relative; }
+.galeri-item img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.galeri-item .overlay {
+    position: absolute; inset: 0; color: #fff; display: flex; align-items: flex-end;
+    background: linear-gradient(transparent 40%, rgba(0, 0, 0, .75)); padding: 1rem;
+    opacity: 0; transition: opacity .3s ease;
+}
+.galeri-item:hover .overlay { opacity: 1; }
+.footer-link { color: rgba(255,255,255,.75); text-decoration: none; }
+.footer-link:hover { color: #fff; text-decoration: underline; }
+
+/* ===== Tema warna: navy #1e2a5e + aksen emas #facc15 ===== */
+.btn-primary {
+    --bs-btn-bg: #1e2a5e; --bs-btn-border-color: #1e2a5e;
+    --bs-btn-hover-bg: #2a3878; --bs-btn-hover-border-color: #2a3878;
+    --bs-btn-focus-shadow-rgb: 90, 110, 190;
+    --bs-btn-active-bg: #16204a; --bs-btn-active-border-color: #16204a;
+    --bs-btn-disabled-bg: #1e2a5e; --bs-btn-disabled-border-color: #1e2a5e;
+}
+.btn-outline-primary {
+    --bs-btn-color: #1e2a5e; --bs-btn-border-color: #1e2a5e;
+    --bs-btn-hover-bg: #1e2a5e; --bs-btn-hover-border-color: #1e2a5e;
+    --bs-btn-focus-shadow-rgb: 30, 42, 94;
+    --bs-btn-active-bg: #16204a; --bs-btn-active-border-color: #16204a;
+    --bs-btn-disabled-color: #1e2a5e; --bs-btn-disabled-border-color: #1e2a5e;
+}
+.section-title { border-left-color: #facc15; }
+.navbar-nav .nav-link.active { color: #facc15; }
+.form-control:focus, .form-select:focus { border-color: #7c8ecb; box-shadow: 0 0 0 .25rem rgba(30, 42, 94, .22); }
+.page-item.active .page-link { background-color: #1e2a5e; border-color: #1e2a5e; }
+footer.bg-dark { background-color: #16204a !important; }

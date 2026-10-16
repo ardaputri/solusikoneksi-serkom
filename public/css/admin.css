@@ -1,0 +1,30 @@
+:root { --bs-primary: #1e2a5e; --bs-primary-rgb: 30, 42, 94; --bs-gold: #facc15; }
+body { min-height: 100vh; background: #f4f6f9; }
+.sidebar {
+    width: 260px; min-height: 100vh; background: #1e2a5e;
+    position: sticky; top: 0; height: 100vh; overflow-y: auto;
+}
+.sidebar a { color: rgba(255,255,255,.78); text-decoration: none; display: flex; align-items: center; gap: .65rem; padding: .65rem 1rem; border-radius: .5rem; }
+.sidebar a:hover { background: rgba(255,255,255,.08); color: #fff; }
+.sidebar a.active { background: #facc15; color: #16204a; font-weight: 600; }
+@media (max-width: 991.98px) {
+    .sidebar { width: 100%; min-height: auto; height: auto; position: static; }
+}
+
+/* ===== Tema warna: navy #1e2a5e + aksen emas #facc15 ===== */
+.btn-primary {
+    --bs-btn-bg: #1e2a5e; --bs-btn-border-color: #1e2a5e;
+    --bs-btn-hover-bg: #2a3878; --bs-btn-hover-border-color: #2a3878;
+    --bs-btn-focus-shadow-rgb: 90, 110, 190;
+    --bs-btn-active-bg: #16204a; --bs-btn-active-border-color: #16204a;
+    --bs-btn-disabled-bg: #1e2a5e; --bs-btn-disabled-border-color: #1e2a5e;
+}
+.btn-outline-primary {
+    --bs-btn-color: #1e2a5e; --bs-btn-border-color: #1e2a5e;
+    --bs-btn-hover-bg: #1e2a5e; --bs-btn-hover-border-color: #1e2a5e;
+    --bs-btn-focus-shadow-rgb: 30, 42, 94;
+    --bs-btn-active-bg: #16204a; --bs-btn-active-border-color: #16204a;
+    --bs-btn-disabled-color: #1e2a5e; --bs-btn-disabled-border-color: #1e2a5e;
+}
+.form-control:focus, .form-select:focus { border-color: #7c8ecb; box-shadow: 0 0 0 .25rem rgba(30, 42, 94, .22); }
+.page-item.active .page-link { background-color: #1e2a5e; border-color: #1e2a5e; }

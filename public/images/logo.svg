@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40">
+  <rect width="40" height="40" rx="10" fill="#0d6efd"/>
+  <path d="M12 26 L20 14 L28 26 M16 22 L24 22" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="50" y="26" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0d6efd">Solusi Koneksi</text>
+</svg>
